@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>first project </title>
+</head>
+<body>
+    <form action ="{{ url_for('predict')}}"method="post">
+        <input type="text" name="experience in years" placeholder="Experience" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Prediction</button>
+    </form>
+    <br>
+    <br>
+    {{ prediction_text }}
+</body>
+</html>
